@@ -1,0 +1,7 @@
+gensim
+openpyxl
+mecab-python3
+ipadic
+modAL
+tqdm
+sentence-transformers

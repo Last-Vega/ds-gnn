@@ -1,0 +1,20 @@
+version: "2.3"
+
+services:
+  dsgnn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: "dsgnn"
+    volumes:
+      - "./:/app"
+      - "/app/.vscode"
+      - "/app/.idea"
+      - ./notebooks:/workspace/notebooks
+    runtime: nvidia
+    environment:
+      NVIDIA_VISIBLE_DEVICES: all
+      NVIDIA_DRIVER_CAPABILITIES: all
+    stdin_open: true
+    tty: true
+    restart: always
