@@ -1,8 +1,4 @@
-# FROM nvcr.io/nvidia/pytorch:23.01-py3
-# FROM nvcr.io/nvidia/pytorch:22.08-py3
-FROM nvcr.io/nvidia/pytorch:22.12-py3
-
-# FROM nvidia/cuda:11.4.0-devel-ubuntu20.04
+FROM nvcr.io/nvidia/pytorch:23.09-py3
 
 WORKDIR /app
 COPY . /app
