@@ -7,7 +7,6 @@ from matplotlib import pyplot as plt
 import numpy as np
 import scipy.sparse as sp
 from scipy.sparse import coo_matrix, csr_matrix, lil_matrix, vstack, hstack
-from torch_geometric.utils import to_networkx
 from torch_geometric.data import HeteroData
 from torch_geometric.utils import to_networkx, to_dense_adj, negative_sampling
 from sklearn.metrics import roc_auc_score, average_precision_score
